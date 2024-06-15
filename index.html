@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="calc.css">
     <script rel="index.js"></script>
 </head>
 <body>
@@ -15,21 +15,32 @@
                     <a></a>
                 </div>
                 <div id="buttons">
-                    <input type="button" value="1" onclick="one()" id="one" name="one">
-                    <input type="button" value="2" onclick="two()" id="two" name="two">
-                    <input type="button" value="3" onclick="three()" id="three" name="three">
-                    <input type="button" value="4" onclick="four()" id="four" name="four">
-                    <input type="button" value="5" onclick="five()" id="five" name="five">
-                    <input type="button" value="6" onclick="six()" id="six" name="six">
-                    <input type="button" value="7" onclick="seven()" id="seven" name="seven">
-                    <input type="button" value="8" onclick="eight()" id="eight" name="eight">
-                    <input type="button" value="9" onclick="nine()" id="nine" name="nine">
-                    <input type="button" value="0" onclick="zero()" id="zero" name="zero">
-                    <input type="button" value="+" onclick="plus()" id="plus" name="plus">
-                    <input type="button" value="-" onclick="minus()" id="minus" name="minus">
-                    <input type="button" value="*" onclick="multi()" id="multi" name="multi">
-                    <input type="button" value="/" onclick="divide()" id="divide" name="divide">
-                    <input type="button" value="=" onclick="equals()" id="equals" name="equals">
+                    <table>
+                        <tr>
+                            <td><input type="button" value="7" onclick="seven()" id="seven" name="seven"></td>
+                            <td><input type="button" value="8" onclick="eight()" id="eight" name="eight"></td>
+                            <td><input type="button" value="9" onclick="nine()" id="nine" name="nine"></td>
+                            <td><input type="button" value="/" onclick="divide()" id="divide" name="divide"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="4" onclick="four()" id="four" name="four"></td>
+                            <td><input type="button" value="5" onclick="five()" id="five" name="five"></td>
+                            <td><input type="button" value="6" onclick="six()" id="six" name="six"></td>
+                            <td><input type="button" value="*" onclick="multi()" id="multi" name="multi"></td>
+                        </tr>
+                        <tr>
+                            <td> <input type="button" value="1" onclick="one()" id="one" name="one"></td>
+                            <td><input type="button" value="2" onclick="two()" id="two" name="two"></td>
+                            <td><input type="button" value="3" onclick="three()" id="three" name="three"> </td>
+                            <td><input type="button" value="+" onclick="plus()" id="plus" name="plus"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="." onclick="decimal()" id="decimal" name="decimal"></td>
+                            <td><input type="button" value="0" onclick="zero()" id="zero" name="zero"> </td>
+                            <td><input type="button" value="-" onclick="minus()" id="minus" name="minus"> </td>
+                            <td> <input type="button" value="=" onclick="equals()" id="equals" name="equals"></td>
+                        </tr>
+                    </table>               
                 </div>
             </form>
         </div>
